@@ -1,0 +1,50 @@
+<!-- app.component.html -->
+<div class="container">
+  <div class="left-section">
+    <!-- Scrollable content -->
+    <p-scrollPanel [style]="{ width: '70vw', height: '80vh' }">
+      <div class="scroll-container">
+        <p-card
+          header="Advanced Card"
+          subheader="Card Subheader"
+          [style]="{
+            'margin-bottom': '50px',
+            'margin-top': '50px'
+          }"
+          *ngFor="let a of arr"
+        >
+          <ng-template pTemplate="header">
+            <img
+              alt="Card"
+              src="https://primefaces.org/cdn/primeng/images/usercard.png"
+              style="height: 100px"
+            />
+          </ng-template>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore
+            sed consequuntur error repudiandae numquam deserunt quisquam
+            repellat libero asperiores earum nam nobis, culpa ratione quam
+            perferendis esse, cupiditate neque quas!
+          </p>
+          <ng-template pTemplate="footer">
+            <p-button label="Save" icon="pi pi-check"></p-button>
+            <p-button
+              label="Cancel"
+              icon="pi pi-times"
+              styleClass="p-button-secondary"
+              [style]="{ 'margin-left': '.5em' }"
+            ></p-button>
+          </ng-template>
+        </p-card>
+      </div>
+    </p-scrollPanel>
+  </div>
+
+  <div class="right-section">
+    <p-tree
+      class="w-full md:w-30rem"
+      [value]="files"
+      [style]="{ 'margin-top': '20px' }"
+    ></p-tree>
+  </div>
+</div>
