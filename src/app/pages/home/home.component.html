@@ -5,13 +5,13 @@
     <p-scrollPanel [style]="{ width: '70vw', height: '80vh' }">
       <div class="scroll-container">
         <p-card
-          header="Advanced Card"
-          subheader="Card Subheader"
+          header="{{ a.title }}"
+          subheader="{{ a.author }}"
           [style]="{
             'margin-bottom': '50px',
             'margin-top': '50px'
           }"
-          *ngFor="let a of arr"
+          *ngFor="let a of posts"
         >
           <ng-template pTemplate="header">
             <img

@@ -8,6 +8,56 @@ import { MenuItem, MessageService, TreeNode } from 'primeng/api';
 })
 export class HomeComponent {
   arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+  posts = [
+    {
+      title: 'Make your own website',
+      author: 'Charles Dowson',
+    },
+    {
+      title: 'Advanced logo builder',
+      author: 'Devid Bekham',
+    },
+    {
+      title: 'Advanced logo builder',
+      author: 'Kapil Kumar',
+    },
+    {
+      title: 'Make your own website',
+      author: 'Charles Dowson',
+    },
+    {
+      title: 'Advanced logo builder',
+      author: 'Devid Bekham',
+    },
+    {
+      title: 'Advanced logo builder',
+      author: 'Kapil Kumar',
+    },
+    {
+      title: 'Make your own website',
+      author: 'Charles Dowson',
+    },
+    {
+      title: 'Advanced logo builder',
+      author: 'Devid Bekham',
+    },
+    {
+      title: 'Advanced logo builder',
+      author: 'Kapil Kumar',
+    },
+    {
+      title: 'Make your own website',
+      author: 'Charles Dowson',
+    },
+    {
+      title: 'Advanced logo builder',
+      author: 'Devid Bekham',
+    },
+    {
+      title: 'Advanced logo builder',
+      author: 'Kapil Kumar',
+    },
+  ];
   files: TreeNode[] = [
     {
       key: '0',

@@ -18,6 +18,7 @@
   position: absolute;
   bottom: 40px;
   right: 60px;
+  display: none;
 }
 
 @media (max-width: 767px) {
@@ -31,7 +32,8 @@
 
   .speed {
     position: absolute;
-    bottom: 40px;
+    bottom: 10vh;
     right: 60px;
+    display: block;
   }
 }
