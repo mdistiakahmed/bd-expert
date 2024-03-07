@@ -11,6 +11,13 @@ import { ScrollPanelModule } from 'primeng/scrollpanel';
 import { CardModule } from 'primeng/card';
 import { ButtonModule } from 'primeng/button';
 import { TreeModule } from 'primeng/tree';
+import { ToolbarModule } from 'primeng/toolbar';
+import { AvatarModule } from 'primeng/avatar';
+import { AvatarGroupModule } from 'primeng/avatargroup';
+import { SpeedDialModule } from 'primeng/speeddial';
+import { MessageModule } from 'primeng/message';
+import { MessagesModule } from 'primeng/messages';
+import { MessageService } from 'primeng/api';
 
 @NgModule({
   declarations: [AppComponent, NavbarComponent, HomeComponent],
@@ -23,8 +30,14 @@ import { TreeModule } from 'primeng/tree';
     CardModule,
     ButtonModule,
     TreeModule,
+    ToolbarModule,
+    AvatarModule,
+    AvatarGroupModule,
+    SpeedDialModule,
+    MessageModule,
+    MessagesModule,
   ],
-  providers: [],
+  providers: [MessageService],
   bootstrap: [AppComponent],
 })
 export class AppModule {}

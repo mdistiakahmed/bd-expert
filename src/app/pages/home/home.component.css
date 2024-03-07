@@ -1,7 +1,37 @@
 .container {
   display: flex;
+  position: relative;
+}
+
+.left-section {
+  width: 70vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .right-section {
   width: 30vw;
+}
+
+.speed {
+  position: absolute;
+  bottom: 40px;
+  right: 60px;
+}
+
+@media (max-width: 767px) {
+  .right-section {
+    display: none;
+  }
+
+  .left-section {
+    width: 90vw;
+  }
+
+  .speed {
+    position: absolute;
+    bottom: 40px;
+    right: 60px;
+  }
 }

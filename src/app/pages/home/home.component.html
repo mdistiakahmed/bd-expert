@@ -1,5 +1,5 @@
 <!-- app.component.html -->
-<div class="container">
+<div class="container" style="position: relative">
   <div class="left-section">
     <!-- Scrollable content -->
     <p-scrollPanel [style]="{ width: '70vw', height: '80vh' }">
@@ -27,12 +27,9 @@
             perferendis esse, cupiditate neque quas!
           </p>
           <ng-template pTemplate="footer">
-            <p-button label="Save" icon="pi pi-check"></p-button>
             <p-button
-              label="Cancel"
-              icon="pi pi-times"
-              styleClass="p-button-secondary"
-              [style]="{ 'margin-left': '.5em' }"
+              label="Continue Reading.."
+              icon="pi pi-arrow-right"
             ></p-button>
           </ng-template>
         </p-card>
@@ -47,4 +44,12 @@
       [style]="{ 'margin-top': '20px' }"
     ></p-tree>
   </div>
+  <p-speedDial
+    [model]="items"
+    [radius]="120"
+    direction="up-left"
+    type="quarter-circle"
+    buttonClassName="p-button-success"
+    class="speed"
+  ></p-speedDial>
 </div>

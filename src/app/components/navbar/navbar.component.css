@@ -1,0 +1,23 @@
+.nav-start {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.auto-class {
+  margin-left: 20vw;
+}
+
+.title {
+  display: flex;
+  flex-direction: column;
+}
+
+.title-h2 {
+  margin: 0px;
+}
+
+.title-p {
+  margin: 0px;
+  font-family: cursive;
+}
